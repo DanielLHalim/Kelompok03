@@ -1,0 +1,26 @@
+RewriteEngine On
+
+RewriteRule ^(beranda) index.php?page=beranda
+
+RewriteRule ^(bahan) index.php?page=bahan
+RewriteRule ^(addbahan) index.php?page=addbahan
+
+RewriteRule ^(produk) index.php?page=produk
+RewriteRule ^(addproduk) index.php?page=addproduk
+
+RewriteRule ^(pembuatan) index.php?page=pembuatan
+RewriteRule ^(addpembuatan) index.php?page=addpembuatan
+
+RewriteRule ^(pekerja) index.php?page=pekerja
+RewriteRule ^(addpekerja) index.php?page=addpekerja
+
+RewriteRule ^(laporan) index.php?page=laporan
+
+RewriteRule ^(pengguna) index.php?page=pengguna
+RewriteRule ^(addpengguna) index.php?page=addpengguna
+
+
+RewriteRule ^(pekerja)/(hapus)/([0-9]{4})/?$ index.php?page=pekerja&hal=$1&kd=$2 [l]
+
+
+
